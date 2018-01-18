@@ -9,7 +9,7 @@
             "email": "tolga@tolgakarabulut.com.tr"
         }
     ],
-    "type": "composer-plugin",
+    "type": "library",
     "require": {
 		"php": ">=5.4"
     },

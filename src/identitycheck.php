@@ -6,6 +6,6 @@ namespace lspeak\identitycheck;
 */
 class identitycheck {
     static function algorithm($number){
-      return $number
+      return $number;
     }
 }

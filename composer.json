@@ -1,0 +1,24 @@
+{
+    "name": "lspeak/identitycheck",
+    "description": "E Devlet ve Algoritmik olarak Kimlik Doğrulama",
+    "keywords": ["identity", "e-devlet", "package" , "identity check" , "tc kimlik", "dogrulama"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "TOLGA KARABULUT",
+            "email": "tolga@tolgakarabulut.com.tr"
+        }
+    ],
+    "type": "composer-plugin",
+    "require": {
+		"php": ">=5.4"
+    },
+	"require-dev": {
+		"phpunit/phpunit": "5.2.*"
+    },
+	"autoload": {
+        "psr-4": {
+            "lspeak\\identitycheck\\": "src/"
+        }
+    }
+}

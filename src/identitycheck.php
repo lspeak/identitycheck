@@ -35,8 +35,12 @@ class identitycheck {
 	* @param  [Date] $birtday  
 	* @return [Bool]           
 	*/
-    static function soapIdentityCheck( $number )
+    static function soapIdentityCheck( $number  , $fullname , $birtday )
     {
+    	if ( empty($fullname)) return false ;
+    	if ( !is_numeric($number) ) return false ;
+    	if ( strlen($birtday) != 4 ) return false ;
+    	
 		$fullname  =  str_replace(['i', 'ı', 'ü', 'ğ', 'ş', 'ö', 'ç'],['İ', 'I', 'Ü', 'Ğ', 'Ş', 'Ö', 'Ç'], $fullname);
 		$fullname  =  mb_strtoupper($fullname);
 		$e = explode(" " , $fullname);
